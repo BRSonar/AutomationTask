@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "87af8854-8427-4e63-aec5-cfd227b519fd",
+		"_postman_id": "2e989dd5-38a5-40d8-9791-da38fa834650",
 		"name": "Interview Task",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -34,7 +34,125 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"coin1\": \"INR\",\r\n\"coin2\": \"USDT\",\r\n\"coin1Amount\": 100,\r\n\"coin2Amount\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://x8ki-letl-twmt.n7.xano.io/api:gHPd8le5/transaction",
+							"protocol": "https",
+							"host": [
+								"x8ki-letl-twmt",
+								"n7",
+								"xano",
+								"io"
+							],
+							"path": [
+								"api:gHPd8le5",
+								"transaction"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 14:52:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XNS=6765bbd1bbaa16fa3d25e334785c9be0|a0d48ac8832118bb024e4ec89ef69405; Path=/socket/; Secure; HttpOnly; SameSite=Strict"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 10 Feb 2013 14:52:37 GMT"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "86400"
+						},
+						{
+							"key": "X-App",
+							"value": "miss"
+						},
+						{
+							"key": "X-Workspace",
+							"value": "hit"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15724800; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 649,\n    \"created_at\": 1675867957645,\n    \"sentCoin\": \"INR\",\n    \"receivedCoin\": \"USDT\",\n    \"sentCoinAmount\": 100,\n    \"receivedCoinAmount\": 1\n}"
+				}
+			]
 		},
 		{
 			"name": "GET",
@@ -57,7 +175,113 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://x8ki-letl-twmt.n7.xano.io/api:gHPd8le5/transaction/649",
+							"protocol": "https",
+							"host": [
+								"x8ki-letl-twmt",
+								"n7",
+								"xano",
+								"io"
+							],
+							"path": [
+								"api:gHPd8le5",
+								"transaction",
+								"649"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 14:53:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XNS=5befd5358d021587b297f63c6547e99f|a0d48ac8832118bb024e4ec89ef69405; Path=/socket/; Secure; HttpOnly; SameSite=Strict"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private, no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 10 Feb 2013 14:53:30 GMT"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "deny"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "86400"
+						},
+						{
+							"key": "X-App",
+							"value": "hit"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15724800; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 649,\n    \"created_at\": 1675867957645,\n    \"sentCoin\": \"INR\",\n    \"receivedCoin\": \"USDT\",\n    \"sentCoinAmount\": 100,\n    \"receivedCoinAmount\": 1,\n    \"receivedCoinMarketPrice\": 100\n}"
+				}
+			]
 		}
 	],
 	"auth": {
