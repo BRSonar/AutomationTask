@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "87af8854-8427-4e63-aec5-cfd227b519fd",
+		"name": "Interview Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"coin1\": \"INR\",\r\n\"coin2\": \"USDT\",\r\n\"coin1Amount\": 100,\r\n\"coin2Amount\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://x8ki-letl-twmt.n7.xano.io/api:gHPd8le5/transaction",
+					"protocol": "https",
+					"host": [
+						"x8ki-letl-twmt",
+						"n7",
+						"xano",
+						"io"
+					],
+					"path": [
+						"api:gHPd8le5",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://x8ki-letl-twmt.n7.xano.io/api:gHPd8le5/transaction/559",
+					"protocol": "https",
+					"host": [
+						"x8ki-letl-twmt",
+						"n7",
+						"xano",
+						"io"
+					],
+					"path": [
+						"api:gHPd8le5",
+						"transaction",
+						"559"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "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",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
